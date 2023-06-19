@@ -1,0 +1,15 @@
+CREATE TABLE Cricketers (ID INT, NAME VARCHAR(20), COUNTRY VARCHAR, AGE INT);
+INSERT INTO Cricketers (ID,NAME,COUNTRY,AGE)
+VALUES (1, 'Dhoni', 'India',45),
+       (2, 'Watson', 'Australia',47),
+       (3, 'Virat', 'India',40),
+       (4, 'Gayle', 'West Indies',50),
+       (5, 'Mitali Raj', 'India',30),
+       (6, 'Jadeja', 'South Africa',37),
+       (7, 'Jayasurya', 'Sri Lanka',35),
+       (8, 'Uthappa', 'Sri Lanka',48),
+       (9, 'Warner', 'Australia',49),
+       (10, 'de Velliers', 'South Africa',42);
+       SELECT COUNT(COUNTRY) FROM Cricketers WHERE COUNTRY='India';
+       SELECT COUNT(COUNTRY) FROM Cricketers WHERE COUNTRY='West Indies';
+       SELECT COUNT(COUNTRY) FROM Cricketers WHERE COUNTRY='South Africa';
