@@ -1,0 +1,23 @@
+CREATE TABLE students(
+    studentID INT, 
+    studentName varchar,
+    department varchar
+    );
+INSERT INTO students(studentID, studentName,department)values
+    (1,'Niranch','Ece'),
+    (2,'Madhan','Mech'),
+    (3,'Mathu','Commerce'),
+    (4,'Medha','Biology');
+CREATE TABLE courses(
+    studentID INT,
+    course varchar,
+    completeState INT
+    );
+INSERT INTO courses(studentID,course,completeState)values
+    (5,'VLSI',60),
+    (1,'Java',90),
+    (4,'CA',50),
+    (6,'Python',95);
+SELECT courses.course,students.studentName,courses.completeState 
+FROM students 
+INNER JOIN courses ON students.studentID=courses.studentID;   
